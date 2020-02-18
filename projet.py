@@ -211,23 +211,10 @@ def afficherTM(T, M):
                 print("D  ", end="")
         print("\n", end="")
 
-
-
-"""
-def afficher1(T):
-    for i in range(len(T)):
-        for j in range(len(T[i])):
-            print(T[i][j], " ", end="")
-        print("\n", end="")
-"""
-
 print("INFO : \n"
       "POUR POSER UN DRAPEAU ENTRER D EN X ET Y\n"
       "POUR LEVER UN DRAPEAU ENTRER F EN X ET Y\n")
+
 T = niveau_de_jeu()
 M = mines_autour(T)
-# afficher1(T)
-# print()
-# afficher1(M)
-# print()
 play(T, M)
